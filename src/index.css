@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* 기본 a 스타일 */
+  a {
+    @apply font-medium text-indigo-500 no-underline;
+  }
+
+  a:hover {
+    @apply text-indigo-600;
+  }
+
+  /* 기본 h1 스타일 */
+  h1 {
+    @apply text-4xl leading-tight;
+  }
+
+  /* 기본 버튼 스타일 */
+  button {
+    @apply rounded-lg border-2 border-transparent py-2 px-4 text-base font-medium cursor-pointer bg-gray-900 transition-colors duration-300;
+  }
+
+  button:hover {
+    @apply border-indigo-500;
+  }
+
+  button:focus,
+  button:focus-visible {
+    outline: 4px solid rgba(100, 100, 255, 0.6);
+  }
+}
+
+/* 미디어 쿼리 - 라이트 모드 */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    @apply text-indigo-400;
+  }
+
+  button {
+    @apply bg-gray-100;
+  }
+}
