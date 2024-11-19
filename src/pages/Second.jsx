@@ -3,7 +3,7 @@ import SecondContent from "../components/SecondContent";
 import ScreenShot1 from "../assets/secondpage/screenshot1.png";
 import ScreenShot2 from "../assets/secondpage/screenshot2.png";
 import ScreenShot3 from "../assets/secondpage/screenshot3.png";
-import circle from "../assets/secondpage/Circle.png";
+import circle from "../assets/secondpage/circle.png";
 import { useState, useEffect } from "react";
 
 const Second = () => {
